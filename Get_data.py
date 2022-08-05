@@ -41,7 +41,7 @@ def get_data(lon1:float,lat1:float,dst,var_name: str):
     
     def fcindex(a,x):
         'Find the two values closest to the input value'
-        i = bisect.bisect_left(a,x)#二分查找算法
+        i = bisect.bisect_left(a,x)
         if i >= len(a):
             i = len(a) - 1
         elif i and a[i] - x > x - a[i - 1]:
