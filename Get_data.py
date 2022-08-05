@@ -105,4 +105,4 @@ def get_data(lon1:float,lat1:float,dst,var_name: str):
 
 if  __name__=="__main__" :
     dst = xr.open_dataset('Y:/Daily_GCM/tasmin_day_ACCESS-CM2_historical_r1i1p1f1_gn_20000101-20141231.nc')
-    site_data = get_data(114.0001,45.0001,data,'tasmin')
+    site_data = get_data(114.0001,45.0001,dst,'tasmin')
